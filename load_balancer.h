@@ -1,20 +1,23 @@
-#define LOADBALANCER_H
+#define LOAD_BALANCER_H
 
 #ifndef REQUEST_CPP
 #include "request.cpp"
+#endif
 
 #include "queue.cpp"
 
-class LoadBalancer
+class Load_Balancer
 {
 public:
     // default constructor
-    LoadBalancer()
+    Load_Balancer()
     {
         systemTime = 0;
     }
 
     int getTime();
+
+    void incrementTime();
 
     void addReq(Request req);
 
@@ -22,9 +25,11 @@ public:
 
     Request getReq();
 
+    void print_queue();
+
+    int size();
+
 private:
     int systemTime;
-    Queue reqQueue();
+    Queue reqQueue;
 };
-
-#endif

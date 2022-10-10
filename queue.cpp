@@ -1,5 +1,6 @@
 #ifndef REQUEST_CPP
 #include "request.cpp"
+#endif
 
 #include <vector>
 
@@ -15,37 +16,24 @@ public:
     }
     void enqueue(Request req)
     {
-        if (queue.empty())
-        {
-            front = 0;
-            rear = 0;
-        }
-        else
-        {
-            rear++;
-        }
-        queue.at(rear) = req;
+        queue.push_back(req);
     }
 
     Request dequeue()
     {
-        if (queue.empty())
-        {
-            return Request();
-        }
-
         Request returnReq;
-        if (front == rear)
-        { // if there is only 1 element
-            returnReq = queue.at(front);
-            front = -1;
-            rear = -1;
+        if (!queue.empty())
+        {
+            returnReq = queue.at(0);
+            queue.erase(queue.begin()); // getting rid of first element of vector
         }
         else
         {
-            returnReq = queue.at(front);
-            front++;
+            returnReq.ip_in = "null";
+            returnReq.ip_out = "null";
+            returnReq.time = 0;
         }
+
         return returnReq;
     }
 
@@ -56,7 +44,20 @@ public:
 
     bool isEmpty()
     {
-        return front == rear;
+        return queue.size() == 0;
+    }
+
+    void print_queue()
+    {
+        for (int i = 0; i < queue.size(); i++)
+        {
+            cout << queue.at(i).ip_in << endl;
+        }
+    }
+
+    int size()
+    {
+        return queue.size();
     }
 
 private:
@@ -64,5 +65,3 @@ private:
     int front;
     int rear;
 };
-
-#endif

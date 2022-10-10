@@ -9,6 +9,7 @@
 #include <string>
 #include <random>
 
+#ifndef REQUEST_CPP
 #define REQUEST_CPP
 
 using namespace std;
@@ -19,3 +20,4 @@ struct Request
     string ip_out;
     int time;
 };
+#endif

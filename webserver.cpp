@@ -29,7 +29,7 @@ public:
         this->serverName = serverName;
     }
 
-    Request getRequest()
+    Request getReq()
     {
         return req;
     }
@@ -41,12 +41,12 @@ public:
 
     bool isDone(int currTime)
     {
-        if (currTime > reqStartTime + req.time)
+        if (currTime >= reqStartTime + req.time)
             return true;
         return false;
     }
 
-    void addRequest(Request rq, int currTime)
+    void addReq(Request rq, int currTime)
     {
         this->req = rq;
         reqStartTime = currTime;
