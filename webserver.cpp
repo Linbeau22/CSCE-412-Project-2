@@ -3,9 +3,13 @@
 // o Asks for another
 
 // create number of webservers requested (user input)
+#ifndef REQUEST_CPP
+#include "request.cpp"
+#endif
+
 #include <iostream>
 #include <string>
-#include "requests.cpp"
+#include "request.cpp"
 
 using namespace std;
 
@@ -15,13 +19,13 @@ class WebServer
 public:
     WebServer()
     { // default constructor
-        rqStartTime = 0;
+        reqStartTime = 0;
         serverName = " ";
     }
 
     WebServer(string serverName) // constructor with inputted server name
     {
-        rqStartTime = 0;
+        reqStartTime = 0;
         this->serverName = serverName;
     }
 
@@ -44,7 +48,7 @@ public:
 
     void addRequest(Request rq, int currTime)
     {
-        this->request = rq;
+        this->req = rq;
         reqStartTime = currTime;
     }
 

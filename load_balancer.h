@@ -1,8 +1,7 @@
 #define LOADBALANCER_H
 
 #ifndef REQUEST_CPP
-#include "requests.cpp"
-#endif
+#include "request.cpp"
 
 #include "queue.cpp"
 
@@ -27,3 +26,5 @@ private:
     int systemTime;
     Queue reqQueue();
 };
+
+#endif

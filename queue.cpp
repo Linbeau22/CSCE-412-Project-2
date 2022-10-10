@@ -1,6 +1,5 @@
 #ifndef REQUEST_CPP
-#include "requests.cpp"
-#endif
+#include "request.cpp"
 
 #include <vector>
 
@@ -65,3 +64,5 @@ private:
     int front;
     int rear;
 };
+
+#endif
