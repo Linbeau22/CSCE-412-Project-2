@@ -25,22 +25,31 @@ public:
         serverName = " ";
     }
 
+    /// @brief This is the constructor, which takes in the servername and initializes the request start time to 0
+    /// @param serverName string server name
     WebServer(string serverName) // constructor with inputted server name
     {
         reqStartTime = 0;
         this->serverName = serverName;
     }
 
+    /// @brief This just grabs the request pertaining to the selected server
+    /// @return
     Request getReq()
     {
         return req;
     }
 
+    /// @brief This just returns the selected servername
+    /// @return
     string getServerName()
     {
         return serverName;
     }
 
+    /// @brief This checks if the request is done processing by taking in the current time as a paramter
+    /// @param currTime comparing current time to the request start time + request process time
+    /// @return
     bool isDone(int currTime)
     {
         if (currTime >= reqStartTime + req.time)
@@ -48,6 +57,9 @@ public:
         return false;
     }
 
+    /// @brief This assigns a new request to the server
+    /// @param rq The new request
+    /// @param currTime current time is request start time
     void addReq(Request rq, int currTime)
     {
         this->req = rq;

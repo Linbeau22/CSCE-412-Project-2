@@ -8,25 +8,102 @@ This is the webserver class, which takes requests from the load balancer, proces
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}\label{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}} 
-{\bfseries Web\+Server} (string server\+Name)
-\item 
-\mbox{\Hypertarget{class_web_server_aa1190180d8cb9413b16726b46dbddde3}\label{class_web_server_aa1190180d8cb9413b16726b46dbddde3}} 
-\mbox{\hyperlink{struct_request}{Request}} {\bfseries get\+Req} ()
-\item 
-\mbox{\Hypertarget{class_web_server_afb946f944469f1d72a8251ca2c82d022}\label{class_web_server_afb946f944469f1d72a8251ca2c82d022}} 
-string {\bfseries get\+Server\+Name} ()
-\item 
-\mbox{\Hypertarget{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}\label{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}} 
-bool {\bfseries is\+Done} (int curr\+Time)
-\item 
-\mbox{\Hypertarget{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}\label{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}} 
-void {\bfseries add\+Req} (\mbox{\hyperlink{struct_request}{Request}} rq, int curr\+Time)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}{Web\+Server}} (string server\+Name)
+\begin{DoxyCompactList}\small\item\em This is the constructor, which takes in the servername and initializes the request start time to 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_request}{Request}} \mbox{\hyperlink{class_web_server_aa1190180d8cb9413b16726b46dbddde3}{get\+Req}} ()
+\begin{DoxyCompactList}\small\item\em This just grabs the request pertaining to the selected server. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_web_server_afb946f944469f1d72a8251ca2c82d022}{get\+Server\+Name}} ()
+\begin{DoxyCompactList}\small\item\em This just returns the selected servername. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}{is\+Done}} (int curr\+Time)
+\begin{DoxyCompactList}\small\item\em This checks if the request is done processing by taking in the current time as a paramter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}{add\+Req}} (\mbox{\hyperlink{struct_request}{Request}} rq, int curr\+Time)
+\begin{DoxyCompactList}\small\item\em This assigns a new request to the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 This is the webserver class, which takes requests from the load balancer, processes the requests, and asks for another request once it finishes processing its current request. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}\label{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}} 
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily Web\+Server\+::\+Web\+Server (\begin{DoxyParamCaption}\item[{string}]{server\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is the constructor, which takes in the servername and initializes the request start time to 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Name} & string server name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}\label{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}} 
+\index{WebServer@{WebServer}!addReq@{addReq}}
+\index{addReq@{addReq}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{addReq()}{addReq()}}
+{\footnotesize\ttfamily void Web\+Server\+::add\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_request}{Request}}}]{rq,  }\item[{int}]{curr\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This assigns a new request to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rq} & The new request \\
+\hline
+{\em curr\+Time} & current time is request start time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_web_server_aa1190180d8cb9413b16726b46dbddde3}\label{class_web_server_aa1190180d8cb9413b16726b46dbddde3}} 
+\index{WebServer@{WebServer}!getReq@{getReq}}
+\index{getReq@{getReq}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getReq()}{getReq()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_request}{Request}} Web\+Server\+::get\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This just grabs the request pertaining to the selected server. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_afb946f944469f1d72a8251ca2c82d022}\label{class_web_server_afb946f944469f1d72a8251ca2c82d022}} 
+\index{WebServer@{WebServer}!getServerName@{getServerName}}
+\index{getServerName@{getServerName}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getServerName()}{getServerName()}}
+{\footnotesize\ttfamily string Web\+Server\+::get\+Server\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This just returns the selected servername. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}\label{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}} 
+\index{WebServer@{WebServer}!isDone@{isDone}}
+\index{isDone@{isDone}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Web\+Server\+::is\+Done (\begin{DoxyParamCaption}\item[{int}]{curr\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This checks if the request is done processing by taking in the current time as a paramter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time} & comparing current time to the request start time + request process time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

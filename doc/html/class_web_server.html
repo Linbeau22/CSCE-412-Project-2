@@ -82,25 +82,197 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8cccef33fda7a15aa498c50d07e193f"><td class="memItemLeft" align="right" valign="top"><a id="ac8cccef33fda7a15aa498c50d07e193f" name="ac8cccef33fda7a15aa498c50d07e193f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WebServer</b> (string serverName)</td></tr>
+<tr class="memitem:ac8cccef33fda7a15aa498c50d07e193f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_server.html#ac8cccef33fda7a15aa498c50d07e193f">WebServer</a> (string serverName)</td></tr>
+<tr class="memdesc:ac8cccef33fda7a15aa498c50d07e193f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the constructor, which takes in the servername and initializes the request start time to 0.  <a href="class_web_server.html#ac8cccef33fda7a15aa498c50d07e193f">More...</a><br /></td></tr>
 <tr class="separator:ac8cccef33fda7a15aa498c50d07e193f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1190180d8cb9413b16726b46dbddde3"><td class="memItemLeft" align="right" valign="top"><a id="aa1190180d8cb9413b16726b46dbddde3" name="aa1190180d8cb9413b16726b46dbddde3"></a>
-<a class="el" href="struct_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getReq</b> ()</td></tr>
+<tr class="memitem:aa1190180d8cb9413b16726b46dbddde3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_server.html#aa1190180d8cb9413b16726b46dbddde3">getReq</a> ()</td></tr>
+<tr class="memdesc:aa1190180d8cb9413b16726b46dbddde3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This just grabs the request pertaining to the selected server.  <a href="class_web_server.html#aa1190180d8cb9413b16726b46dbddde3">More...</a><br /></td></tr>
 <tr class="separator:aa1190180d8cb9413b16726b46dbddde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb946f944469f1d72a8251ca2c82d022"><td class="memItemLeft" align="right" valign="top"><a id="afb946f944469f1d72a8251ca2c82d022" name="afb946f944469f1d72a8251ca2c82d022"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getServerName</b> ()</td></tr>
+<tr class="memitem:afb946f944469f1d72a8251ca2c82d022"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_server.html#afb946f944469f1d72a8251ca2c82d022">getServerName</a> ()</td></tr>
+<tr class="memdesc:afb946f944469f1d72a8251ca2c82d022"><td class="mdescLeft">&#160;</td><td class="mdescRight">This just returns the selected servername.  <a href="class_web_server.html#afb946f944469f1d72a8251ca2c82d022">More...</a><br /></td></tr>
 <tr class="separator:afb946f944469f1d72a8251ca2c82d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1f3f45dca8ea93b59671de93428a98a"><td class="memItemLeft" align="right" valign="top"><a id="ab1f3f45dca8ea93b59671de93428a98a" name="ab1f3f45dca8ea93b59671de93428a98a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDone</b> (int currTime)</td></tr>
+<tr class="memitem:ab1f3f45dca8ea93b59671de93428a98a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_server.html#ab1f3f45dca8ea93b59671de93428a98a">isDone</a> (int currTime)</td></tr>
+<tr class="memdesc:ab1f3f45dca8ea93b59671de93428a98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This checks if the request is done processing by taking in the current time as a paramter.  <a href="class_web_server.html#ab1f3f45dca8ea93b59671de93428a98a">More...</a><br /></td></tr>
 <tr class="separator:ab1f3f45dca8ea93b59671de93428a98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f546bdec5591d0e933d14dbcc54cec2"><td class="memItemLeft" align="right" valign="top"><a id="a9f546bdec5591d0e933d14dbcc54cec2" name="a9f546bdec5591d0e933d14dbcc54cec2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addReq</b> (<a class="el" href="struct_request.html">Request</a> rq, int currTime)</td></tr>
+<tr class="memitem:a9f546bdec5591d0e933d14dbcc54cec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_server.html#a9f546bdec5591d0e933d14dbcc54cec2">addReq</a> (<a class="el" href="struct_request.html">Request</a> rq, int currTime)</td></tr>
+<tr class="memdesc:a9f546bdec5591d0e933d14dbcc54cec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This assigns a new request to the server.  <a href="class_web_server.html#a9f546bdec5591d0e933d14dbcc54cec2">More...</a><br /></td></tr>
 <tr class="separator:a9f546bdec5591d0e933d14dbcc54cec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This is the webserver class, which takes requests from the load balancer, processes the requests, and asks for another request once it finishes processing its current request. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac8cccef33fda7a15aa498c50d07e193f" name="ac8cccef33fda7a15aa498c50d07e193f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cccef33fda7a15aa498c50d07e193f">&#9670;&#160;</a></span>WebServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebServer::WebServer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>serverName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the constructor, which takes in the servername and initializes the request start time to 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serverName</td><td>string server name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f546bdec5591d0e933d14dbcc54cec2" name="a9f546bdec5591d0e933d14dbcc54cec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f546bdec5591d0e933d14dbcc54cec2">&#9670;&#160;</a></span>addReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebServer::addReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_request.html">Request</a>&#160;</td>
+          <td class="paramname"><em>rq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This assigns a new request to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rq</td><td>The new request </td></tr>
+    <tr><td class="paramname">currTime</td><td>current time is request start time </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1190180d8cb9413b16726b46dbddde3" name="aa1190180d8cb9413b16726b46dbddde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1190180d8cb9413b16726b46dbddde3">&#9670;&#160;</a></span>getReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_request.html">Request</a> WebServer::getReq </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This just grabs the request pertaining to the selected server. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="afb946f944469f1d72a8251ca2c82d022" name="afb946f944469f1d72a8251ca2c82d022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb946f944469f1d72a8251ca2c82d022">&#9670;&#160;</a></span>getServerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebServer::getServerName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This just returns the selected servername. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ab1f3f45dca8ea93b59671de93428a98a" name="ab1f3f45dca8ea93b59671de93428a98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f3f45dca8ea93b59671de93428a98a">&#9670;&#160;</a></span>isDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebServer::isDone </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This checks if the request is done processing by taking in the current time as a paramter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currTime</td><td>comparing current time to the request start time + request process time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>webserver.cpp</li>
 </ul>
 </div><!-- contents -->

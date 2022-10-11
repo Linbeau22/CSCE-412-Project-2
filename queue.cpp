@@ -10,16 +10,20 @@ using namespace std;
 class Queue
 {
 public:
+    /// @brief  default constructor
     Queue()
     {
-        front = -1;
-        rear = -1;
     }
+
+    /// @brief Adds a request to the queue
+    /// @param req Request
     void enqueue(Request req)
     {
         queue.push_back(req);
     }
 
+    /// @brief Removes a request from the queue if the queue is not empty
+    /// @return
     Request dequeue()
     {
         Request returnReq;
@@ -38,16 +42,14 @@ public:
         return returnReq;
     }
 
-    Request showFront()
-    {
-        return queue[front];
-    }
-
+    /// @brief Checks if the request queue is empty
+    /// @return
     bool isEmpty()
     {
         return queue.size() == 0;
     }
 
+    /// @brief Prints the queue: used for debugging
     void print_queue()
     {
         for (int i = 0; i < queue.size(); i++)
@@ -56,13 +58,14 @@ public:
         }
     }
 
+    /// @brief Returns the size of the request queue
+    /// @return
     int size()
     {
         return queue.size();
     }
 
 private:
+    /// @brief queue that holds requests in form of a vector
     vector<Request> queue;
-    int front;
-    int rear;
 };

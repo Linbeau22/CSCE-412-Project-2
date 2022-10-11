@@ -8,28 +8,81 @@ This is the queue I implemented from scratch using the vector class. This queue 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_queue_aafb9a4414b3463cf3fe4d390bcadb132}\label{class_queue_aafb9a4414b3463cf3fe4d390bcadb132}} 
-void {\bfseries enqueue} (\mbox{\hyperlink{struct_request}{Request}} req)
-\item 
-\mbox{\Hypertarget{class_queue_a088f943713060627f694b3c6ba4a5e48}\label{class_queue_a088f943713060627f694b3c6ba4a5e48}} 
-\mbox{\hyperlink{struct_request}{Request}} {\bfseries dequeue} ()
-\item 
-\mbox{\Hypertarget{class_queue_a79802c5d4b8073aecdc9cc7f1ecaf974}\label{class_queue_a79802c5d4b8073aecdc9cc7f1ecaf974}} 
-\mbox{\hyperlink{struct_request}{Request}} {\bfseries show\+Front} ()
-\item 
-\mbox{\Hypertarget{class_queue_a65d9b23c23c917faa44981539bc34be7}\label{class_queue_a65d9b23c23c917faa44981539bc34be7}} 
-bool {\bfseries is\+Empty} ()
-\item 
+\mbox{\Hypertarget{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}\label{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}} 
+{\bfseries Queue} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_aafb9a4414b3463cf3fe4d390bcadb132}{enqueue}} (\mbox{\hyperlink{struct_request}{Request}} req)
+\begin{DoxyCompactList}\small\item\em Adds a request to the queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_request}{Request}} \mbox{\hyperlink{class_queue_a088f943713060627f694b3c6ba4a5e48}{dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Removes a request from the queue if the queue is not empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_queue_a65d9b23c23c917faa44981539bc34be7}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the request queue is empty. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_queue_a86aa47f408e44ff0cf16dbcebcee342c}\label{class_queue_a86aa47f408e44ff0cf16dbcebcee342c}} 
 void {\bfseries print\+\_\+queue} ()
-\item 
-\mbox{\Hypertarget{class_queue_a04035df1270c73e08ca1fa7eb267d9b8}\label{class_queue_a04035df1270c73e08ca1fa7eb267d9b8}} 
-int {\bfseries size} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Prints the queue\+: used for debugging. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_a04035df1270c73e08ca1fa7eb267d9b8}{size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the size of the request queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 This is the queue I implemented from scratch using the vector class. This queue will be used to store requests for the load balancer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_queue_a088f943713060627f694b3c6ba4a5e48}\label{class_queue_a088f943713060627f694b3c6ba4a5e48}} 
+\index{Queue@{Queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_request}{Request}} Queue\+::dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a request from the queue if the queue is not empty. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_queue_aafb9a4414b3463cf3fe4d390bcadb132}\label{class_queue_aafb9a4414b3463cf3fe4d390bcadb132}} 
+\index{Queue@{Queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void Queue\+::enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_request}{Request}}}]{req }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a request to the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & \mbox{\hyperlink{struct_request}{Request}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_queue_a65d9b23c23c917faa44981539bc34be7}\label{class_queue_a65d9b23c23c917faa44981539bc34be7}} 
+\index{Queue@{Queue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Queue\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the request queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_queue_a04035df1270c73e08ca1fa7eb267d9b8}\label{class_queue_a04035df1270c73e08ca1fa7eb267d9b8}} 
+\index{Queue@{Queue}!size@{size}}
+\index{size@{size}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Queue\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the request queue. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

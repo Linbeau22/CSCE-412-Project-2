@@ -89,25 +89,31 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        systemTime = 0;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> getTime();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_load___balancer.html#ad5265d28a7b03f6611ad3462e726f38a">getTime</a>();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> incrementTime();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_load___balancer.html#aba1de12088c6e6d09a58df1fac68f0d4">incrementTime</a>();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> addReq(<a class="code hl_struct" href="struct_request.html">Request</a> req);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> isEmpty();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_load___balancer.html#af2c21709dd10430b6820329533333dff">isEmpty</a>();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_struct" href="struct_request.html">Request</a> getReq();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_struct" href="struct_request.html">Request</a> <a class="code hl_function" href="class_load___balancer.html#a5cad0e4bbebbe5b1fb037b7b2ba96e17">getReq</a>();</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> print_queue();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_load___balancer.html#aaeda008c16edd2971c024e274902490c">print_queue</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> size();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_load___balancer.html#a03424ce56341f640edb119593461a35b">size</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">int</span> systemTime;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_queue.html">Queue</a> reqQueue;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 <div class="ttc" id="aclass_load___balancer_html"><div class="ttname"><a href="class_load___balancer.html">Load_Balancer</a></div><div class="ttdoc">This is the load balancer class, which has a queue of the requests and keeps track of time....</div><div class="ttdef"><b>Definition:</b> Load_Balancer.h:10</div></div>
+<div class="ttc" id="aclass_load___balancer_html_a03424ce56341f640edb119593461a35b"><div class="ttname"><a href="class_load___balancer.html#a03424ce56341f640edb119593461a35b">Load_Balancer::size</a></div><div class="ttdeci">int size()</div><div class="ttdoc">returns the size of the request queue</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:56</div></div>
+<div class="ttc" id="aclass_load___balancer_html_a5cad0e4bbebbe5b1fb037b7b2ba96e17"><div class="ttname"><a href="class_load___balancer.html#a5cad0e4bbebbe5b1fb037b7b2ba96e17">Load_Balancer::getReq</a></div><div class="ttdeci">Request getReq()</div><div class="ttdoc">returns the request at the end of the queue and dequeues it from the queue</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:31</div></div>
+<div class="ttc" id="aclass_load___balancer_html_aaeda008c16edd2971c024e274902490c"><div class="ttname"><a href="class_load___balancer.html#aaeda008c16edd2971c024e274902490c">Load_Balancer::print_queue</a></div><div class="ttdeci">void print_queue()</div><div class="ttdoc">prints the elements in the queue: used for debugging</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:42</div></div>
+<div class="ttc" id="aclass_load___balancer_html_aba1de12088c6e6d09a58df1fac68f0d4"><div class="ttname"><a href="class_load___balancer.html#aba1de12088c6e6d09a58df1fac68f0d4">Load_Balancer::incrementTime</a></div><div class="ttdeci">void incrementTime()</div><div class="ttdoc">increments the system time by 1</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:18</div></div>
+<div class="ttc" id="aclass_load___balancer_html_ad5265d28a7b03f6611ad3462e726f38a"><div class="ttname"><a href="class_load___balancer.html#ad5265d28a7b03f6611ad3462e726f38a">Load_Balancer::getTime</a></div><div class="ttdeci">int getTime()</div><div class="ttdoc">returns the system time</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:12</div></div>
+<div class="ttc" id="aclass_load___balancer_html_af2c21709dd10430b6820329533333dff"><div class="ttname"><a href="class_load___balancer.html#af2c21709dd10430b6820329533333dff">Load_Balancer::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">Checks to see if the queue of requests is empty.</div><div class="ttdef"><b>Definition:</b> Load_Balancer.cpp:49</div></div>
 <div class="ttc" id="aclass_queue_html"><div class="ttname"><a href="class_queue.html">Queue</a></div><div class="ttdoc">This is the queue I implemented from scratch using the vector class. This queue will be used to store...</div><div class="ttdef"><b>Definition:</b> queue.cpp:11</div></div>
 <div class="ttc" id="astruct_request_html"><div class="ttname"><a href="struct_request.html">Request</a></div><div class="ttdoc">This is the request class which contains data about a request. A request has an IP address in,...</div><div class="ttdef"><b>Definition:</b> request.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->

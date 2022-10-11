@@ -16,8 +16,11 @@ using namespace std;
 
 struct Request
 {
+    /// @brief randomly generated IP in address
     string ip_in;
+    /// @brief randomly generated IP out address
     string ip_out;
+    /// @brief processing time of the request i.e how long it takes to process the request
     int time;
 };
 #endif
