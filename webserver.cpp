@@ -13,6 +13,8 @@
 
 using namespace std;
 
+/// @brief This is the webserver class, which takes requests from the load balancer, processes the requests, and asks for another request once it finishes processing its current request
+
 class WebServer
 {
 

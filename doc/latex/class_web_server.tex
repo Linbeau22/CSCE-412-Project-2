@@ -1,0 +1,33 @@
+\hypertarget{class_web_server}{}\doxysection{Web\+Server Class Reference}
+\label{class_web_server}\index{WebServer@{WebServer}}
+
+
+This is the webserver class, which takes requests from the load balancer, processes the requests, and asks for another request once it finishes processing its current request.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}\label{class_web_server_ac8cccef33fda7a15aa498c50d07e193f}} 
+{\bfseries Web\+Server} (string server\+Name)
+\item 
+\mbox{\Hypertarget{class_web_server_aa1190180d8cb9413b16726b46dbddde3}\label{class_web_server_aa1190180d8cb9413b16726b46dbddde3}} 
+\mbox{\hyperlink{struct_request}{Request}} {\bfseries get\+Req} ()
+\item 
+\mbox{\Hypertarget{class_web_server_afb946f944469f1d72a8251ca2c82d022}\label{class_web_server_afb946f944469f1d72a8251ca2c82d022}} 
+string {\bfseries get\+Server\+Name} ()
+\item 
+\mbox{\Hypertarget{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}\label{class_web_server_ab1f3f45dca8ea93b59671de93428a98a}} 
+bool {\bfseries is\+Done} (int curr\+Time)
+\item 
+\mbox{\Hypertarget{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}\label{class_web_server_a9f546bdec5591d0e933d14dbcc54cec2}} 
+void {\bfseries add\+Req} (\mbox{\hyperlink{struct_request}{Request}} rq, int curr\+Time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the webserver class, which takes requests from the load balancer, processes the requests, and asks for another request once it finishes processing its current request. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webserver.\+cpp\end{DoxyCompactItemize}

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+/// @brief This is the queue I implemented from scratch using the vector class. This queue will be used to store requests for the load balancer
 class Queue
 {
 public:

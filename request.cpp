@@ -3,8 +3,6 @@
 // o IP out
 // o Time (integer)
 
-// request class holds a request
-// need a queue of type Request
 #include <iostream>
 #include <string>
 #include <random>
@@ -13,6 +11,8 @@
 #define REQUEST_CPP
 
 using namespace std;
+
+/// @brief This is the request class which contains data about a request. A request has an IP address in, IP address out, and a process time for the request
 
 struct Request
 {

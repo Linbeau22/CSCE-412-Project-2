@@ -1,0 +1,44 @@
+\hypertarget{class_load___balancer}{}\doxysection{Load\+\_\+\+Balancer Class Reference}
+\label{class_load___balancer}\index{Load\_Balancer@{Load\_Balancer}}
+
+
+This is the load balancer class, which has a queue of the requests and keeps track of time. I have added additional methods for debugging purposes.  
+
+
+
+
+{\ttfamily \#include $<$Load\+\_\+\+Balancer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_load___balancer_ad5265d28a7b03f6611ad3462e726f38a}\label{class_load___balancer_ad5265d28a7b03f6611ad3462e726f38a}} 
+int {\bfseries get\+Time} ()
+\item 
+\mbox{\Hypertarget{class_load___balancer_aba1de12088c6e6d09a58df1fac68f0d4}\label{class_load___balancer_aba1de12088c6e6d09a58df1fac68f0d4}} 
+void {\bfseries increment\+Time} ()
+\item 
+\mbox{\Hypertarget{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}\label{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}} 
+void {\bfseries add\+Req} (\mbox{\hyperlink{struct_request}{Request}} req)
+\item 
+\mbox{\Hypertarget{class_load___balancer_af2c21709dd10430b6820329533333dff}\label{class_load___balancer_af2c21709dd10430b6820329533333dff}} 
+bool {\bfseries is\+Empty} ()
+\item 
+\mbox{\Hypertarget{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}\label{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}} 
+\mbox{\hyperlink{struct_request}{Request}} {\bfseries get\+Req} ()
+\item 
+\mbox{\Hypertarget{class_load___balancer_aaeda008c16edd2971c024e274902490c}\label{class_load___balancer_aaeda008c16edd2971c024e274902490c}} 
+void {\bfseries print\+\_\+queue} ()
+\item 
+\mbox{\Hypertarget{class_load___balancer_a03424ce56341f640edb119593461a35b}\label{class_load___balancer_a03424ce56341f640edb119593461a35b}} 
+int {\bfseries size} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the load balancer class, which has a queue of the requests and keeps track of time. I have added additional methods for debugging purposes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Load\+\_\+\+Balancer.\+h\item 
+Load\+\_\+\+Balancer.\+cpp\end{DoxyCompactItemize}

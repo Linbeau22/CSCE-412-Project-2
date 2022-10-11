@@ -1,0 +1,39 @@
+\hypertarget{_load___balancer_8h_source}{}\doxysection{Load\+\_\+\+Balancer.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#define LOAD\_BALANCER\_H}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef REQUEST\_CPP}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}request.cpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}queue.cpp"{}}}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_load___balancer}{Load\_Balancer}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \textcolor{comment}{// default constructor}}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_load___balancer}{Load\_Balancer}}()}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         systemTime = 0;}
+\DoxyCodeLine{16     \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} getTime();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} incrementTime();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} addReq(\mbox{\hyperlink{struct_request}{Request}} req);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{bool} isEmpty();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{struct_request}{Request}} getReq();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} print\_queue();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} size();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{private}:}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} systemTime;}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_queue}{Queue}} reqQueue;}
+\DoxyCodeLine{35 \};}
+
+\end{DoxyCode}

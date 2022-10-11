@@ -5,7 +5,7 @@
 #endif
 
 #include "queue.cpp"
-
+/// @brief This is the load balancer class, which has a queue of the requests and keeps track of time. I have added additional methods for debugging purposes
 class Load_Balancer
 {
 public:
