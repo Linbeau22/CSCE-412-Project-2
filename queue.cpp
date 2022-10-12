@@ -23,14 +23,14 @@ public:
     }
 
     /// @brief Removes a request from the queue if the queue is not empty
-    /// @return
+    /// @return returns the request being dequeued
     Request dequeue()
     {
         Request returnReq;
         if (!queue.empty())
         {
             returnReq = queue.at(0);
-            queue.erase(queue.begin()); // getting rid of first element of vector
+            queue.erase(queue.begin()); /// getting rid of first element of vector
         }
         else
         {
@@ -43,7 +43,7 @@ public:
     }
 
     /// @brief Checks if the request queue is empty
-    /// @return
+    /// @return true if the queue is empty, false if not
     bool isEmpty()
     {
         return queue.size() == 0;
@@ -59,7 +59,7 @@ public:
     }
 
     /// @brief Returns the size of the request queue
-    /// @return
+    /// @return size of the queue
     int size()
     {
         return queue.size();

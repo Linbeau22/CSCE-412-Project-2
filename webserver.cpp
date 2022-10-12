@@ -34,14 +34,14 @@ public:
     }
 
     /// @brief This just grabs the request pertaining to the selected server
-    /// @return
+    /// @return the request
     Request getReq()
     {
         return req;
     }
 
     /// @brief This just returns the selected servername
-    /// @return
+    /// @return the server name
     string getServerName()
     {
         return serverName;
@@ -49,7 +49,7 @@ public:
 
     /// @brief This checks if the request is done processing by taking in the current time as a paramter
     /// @param currTime comparing current time to the request start time + request process time
-    /// @return
+    /// @return true if request is done processing, false if not
     bool isDone(int currTime)
     {
         if (currTime >= reqStartTime + req.time)

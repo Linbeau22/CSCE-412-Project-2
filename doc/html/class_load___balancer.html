@@ -91,8 +91,7 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>incrementTime</b> ()</td></tr>
 <tr class="memdesc:aba1de12088c6e6d09a58df1fac68f0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">increments the system time by 1 <br /></td></tr>
 <tr class="separator:aba1de12088c6e6d09a58df1fac68f0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c9288e9734d53b932e309bb3051fe2"><td class="memItemLeft" align="right" valign="top"><a id="ab3c9288e9734d53b932e309bb3051fe2" name="ab3c9288e9734d53b932e309bb3051fe2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addReq</b> (<a class="el" href="struct_request.html">Request</a> req)</td></tr>
+<tr class="memitem:ab3c9288e9734d53b932e309bb3051fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load___balancer.html#ab3c9288e9734d53b932e309bb3051fe2">addReq</a> (<a class="el" href="struct_request.html">Request</a> req)</td></tr>
 <tr class="separator:ab3c9288e9734d53b932e309bb3051fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c21709dd10430b6820329533333dff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load___balancer.html#af2c21709dd10430b6820329533333dff">isEmpty</a> ()</td></tr>
 <tr class="memdesc:af2c21709dd10430b6820329533333dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the queue of requests is empty.  <a href="class_load___balancer.html#af2c21709dd10430b6820329533333dff">More...</a><br /></td></tr>
@@ -111,6 +110,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> ()</t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This is the load balancer class, which has a queue of the requests and keeps track of time. I have added additional methods for debugging purposes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3c9288e9734d53b932e309bb3051fe2" name="ab3c9288e9734d53b932e309bb3051fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c9288e9734d53b932e309bb3051fe2">&#9670;&#160;</a></span>addReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Load_Balancer::addReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_request.html">Request</a>&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >add the request to the request queue</p>
+<p >increment the time because it takes time to add to the queue</p>
+
+</div>
+</div>
 <a id="a5cad0e4bbebbe5b1fb037b7b2ba96e17" name="a5cad0e4bbebbe5b1fb037b7b2ba96e17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cad0e4bbebbe5b1fb037b7b2ba96e17">&#9670;&#160;</a></span>getReq()</h2>
 
@@ -127,7 +146,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> ()</t
 </div><div class="memdoc">
 
 <p>returns the request at the end of the queue and dequeues it from the queue </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>request that's dequeued </dd></dl>
 
 </div>
 </div>
@@ -147,7 +166,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> ()</t
 </div><div class="memdoc">
 
 <p>returns the system time </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>system time </dd></dl>
 
 </div>
 </div>
@@ -167,7 +186,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> ()</t
 </div><div class="memdoc">
 
 <p>Checks to see if the queue of requests is empty. </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if queue is empty, false if not </dd></dl>
 
 </div>
 </div>
@@ -187,7 +206,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print_queue</b> ()</t
 </div><div class="memdoc">
 
 <p>returns the size of the request queue </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>size of the queue </dd></dl>
 
 </div>
 </div>

@@ -17,8 +17,7 @@ int \mbox{\hyperlink{class_load___balancer_ad5265d28a7b03f6611ad3462e726f38a}{ge
 \mbox{\Hypertarget{class_load___balancer_aba1de12088c6e6d09a58df1fac68f0d4}\label{class_load___balancer_aba1de12088c6e6d09a58df1fac68f0d4}} 
 void {\bfseries increment\+Time} ()
 \begin{DoxyCompactList}\small\item\em increments the system time by 1 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}\label{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}} 
-void {\bfseries add\+Req} (\mbox{\hyperlink{struct_request}{Request}} req)
+void \mbox{\hyperlink{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}{add\+Req}} (\mbox{\hyperlink{struct_request}{Request}} req)
 \item 
 bool \mbox{\hyperlink{class_load___balancer_af2c21709dd10430b6820329533333dff}{is\+Empty}} ()
 \begin{DoxyCompactList}\small\item\em Checks to see if the queue of requests is empty. \end{DoxyCompactList}\item 
@@ -35,7 +34,15 @@ int \mbox{\hyperlink{class_load___balancer_a03424ce56341f640edb119593461a35b}{si
 This is the load balancer class, which has a queue of the requests and keeps track of time. I have added additional methods for debugging purposes. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}\label{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}} 
+\mbox{\Hypertarget{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}\label{class_load___balancer_ab3c9288e9734d53b932e309bb3051fe2}} 
+\index{Load\_Balancer@{Load\_Balancer}!addReq@{addReq}}
+\index{addReq@{addReq}!Load\_Balancer@{Load\_Balancer}}
+\doxysubsubsection{\texorpdfstring{addReq()}{addReq()}}
+{\footnotesize\ttfamily void Load\+\_\+\+Balancer\+::add\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_request}{Request}}}]{req }\end{DoxyParamCaption})}
+
+add the request to the request queue
+
+increment the time because it takes time to add to the queue\mbox{\Hypertarget{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}\label{class_load___balancer_a5cad0e4bbebbe5b1fb037b7b2ba96e17}} 
 \index{Load\_Balancer@{Load\_Balancer}!getReq@{getReq}}
 \index{getReq@{getReq}!Load\_Balancer@{Load\_Balancer}}
 \doxysubsubsection{\texorpdfstring{getReq()}{getReq()}}
@@ -46,7 +53,7 @@ This is the load balancer class, which has a queue of the requests and keeps tra
 returns the request at the end of the queue and dequeues it from the queue 
 
 \begin{DoxyReturn}{Returns}
-
+request that\textquotesingle{}s dequeued 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_load___balancer_ad5265d28a7b03f6611ad3462e726f38a}\label{class_load___balancer_ad5265d28a7b03f6611ad3462e726f38a}} 
 \index{Load\_Balancer@{Load\_Balancer}!getTime@{getTime}}
@@ -59,7 +66,7 @@ returns the request at the end of the queue and dequeues it from the queue
 returns the system time 
 
 \begin{DoxyReturn}{Returns}
-
+system time 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_load___balancer_af2c21709dd10430b6820329533333dff}\label{class_load___balancer_af2c21709dd10430b6820329533333dff}} 
 \index{Load\_Balancer@{Load\_Balancer}!isEmpty@{isEmpty}}
@@ -72,7 +79,7 @@ returns the system time
 Checks to see if the queue of requests is empty. 
 
 \begin{DoxyReturn}{Returns}
-
+true if queue is empty, false if not 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_load___balancer_a03424ce56341f640edb119593461a35b}\label{class_load___balancer_a03424ce56341f640edb119593461a35b}} 
 \index{Load\_Balancer@{Load\_Balancer}!size@{size}}
@@ -85,7 +92,7 @@ Checks to see if the queue of requests is empty.
 returns the size of the request queue 
 
 \begin{DoxyReturn}{Returns}
-
+size of the queue 
 \end{DoxyReturn}
 
 

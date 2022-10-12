@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['webserver_0',['WebServer',['../class_web_server.html',1,'WebServer'],['../class_web_server.html#ac8cccef33fda7a15aa498c50d07e193f',1,'WebServer::WebServer()']]]
+  ['time_0',['time',['../struct_request.html#a3cfb576ed0b5e08612f3de8bc7cd72e2',1,'Request']]]
 ];

@@ -8,7 +8,7 @@
 #include <iostream>
 
 /// @brief returns the system time
-/// @return
+/// @return system time
 int Load_Balancer::getTime()
 {
     return systemTime;
@@ -22,12 +22,12 @@ void Load_Balancer::incrementTime()
 
 void Load_Balancer::addReq(Request req)
 {
-    reqQueue.enqueue(req); // add the request to the request queue
-    systemTime++;          // increment the time because it takes time to add to the queue
+    reqQueue.enqueue(req); /// add the request to the request queue
+    systemTime++;          /// increment the time because it takes time to add to the queue
 }
 
 /// @brief returns the request at the end of the queue and dequeues it from the queue
-/// @return
+/// @return request that's dequeued
 Request Load_Balancer::getReq()
 {
     systemTime++;
@@ -45,14 +45,14 @@ void Load_Balancer::print_queue()
 }
 
 /// @brief Checks to see if the queue of requests is empty
-/// @return
+/// @return true if queue is empty, false if not
 bool Load_Balancer::isEmpty()
 {
     return reqQueue.isEmpty();
 }
 
 /// @brief  returns the size of the request queue
-/// @return
+/// @return size of the queue
 int Load_Balancer::size()
 {
     return reqQueue.size();
