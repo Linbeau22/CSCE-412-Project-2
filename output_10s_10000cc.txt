@@ -398,3 +398,4 @@ Time 9872: server C processed request from 35.55.252.110 to 72.145.131.72
 Time 9884: server E processed request from 62.90.248.251 to 200.66.182.159
 Time 9929: server J processed request from 143.178.105.35 to 212.214.140.61
 Ending queue size: 2
+The range for process time of a request is randomly chosen between 1 and 500 clock cycles

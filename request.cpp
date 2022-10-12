@@ -14,8 +14,9 @@ using namespace std;
 
 /// @brief This is the request class which contains data about a request. A request has an IP address in, IP address out, and a process time for the request
 
-struct Request
+class Request
 {
+public:
     /// @brief randomly generated IP in address
     string ip_in;
     /// @brief randomly generated IP out address

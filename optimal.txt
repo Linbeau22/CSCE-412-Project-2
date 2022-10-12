@@ -1,0 +1,2 @@
+The optimal parameters for this load balancer according to my outputs are 23 webservers with 10000 clock cycles with a range of 1-500 clock cycles for the request process time. 
+The starting queue size was 46 requests and the queue ended with 49 requests.

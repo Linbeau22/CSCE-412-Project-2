@@ -856,3 +856,4 @@ Time 9951: server P processed request from 42.144.134.250 to 106.238.255.193
 Time 9974: server P processed request from 173.40.70.104 to 95.127.14.190
 Time 9981: server W processed request from 72.73.176.197 to 139.66.48.5
 Ending queue size: 49
+The range for process time of a request is randomly chosen between 1 and 500 clock cycles
